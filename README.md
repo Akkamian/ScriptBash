@@ -12,8 +12,16 @@ A terminal is a software environment that provides text input/output for users t
 
 The shell is the command-line interpreter: it processes instructions entered by the user in the terminal and interacts with the operating system. The shell breaks down commands, executes programs, and returns results. Popular shells include Bash, Zsh, PowerShell, and Command Prompt.
 
-## What is Bash
-Bash is the shell, or command language interpreter, for the GNU operating system. The name is an acronym for the ‘Bourne-Again SHell’, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell sh, which appeared in the Seventh Edition Bell Labs Research version of Unix.
+An important feature of the shell is that it dynamically resolves the paths of programs called: when a command is typed, the shell searches through the directories listed in the environment variable PATH to locate the corresponding executable.
+
+To optimize performance, the shell remembers (caches) the full paths of programs it has previously found, so it does not need to perform the full search on subsequent calls. This caching speeds up program launching, especially when the same commands are used repeatedly.
+
+## What is Bash and Git Bash
+Bash is a shell, or command language interpreter, originally developed for Unix and GNU operating systems. The name stands for ‘Bourne-Again SHell’, a pun on the original Bourne shell by Stephen Bourne.
+
+Git Bash is a package that provides a Bash emulation environment on Windows. It installs Bash along with common Unix utilities and Git commands, enabling Windows users to run Bash scripts and use Git from a familiar Unix-like command line interface.
+
+This makes Git Bash a convenient way to use Bash and Git on an operating system that traditionally does not support Unix shells, extending the accessibility of these tools beyond Linux and macOS to Windows.
 
 ## Command and Arguments
 
